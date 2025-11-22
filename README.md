@@ -2,10 +2,10 @@
 
 This directory contains the benchmark code and results demonstrating Numen's performance on the **LIMIT dataset** (DeepMind, 2025).
 
-## 🎯 The Challenge
+##  The Challenge
 The LIMIT paper ("On the Theoretical Limitations of Embedding-Based Retrieval") argues that dense embedding models have a fundamental theoretical limit based on their dimension ($d$). They showed that even state-of-the-art 7B parameter models (E5-Mistral, GritLM) fail on simple retrieval tasks because they cannot represent all combinations of documents.
 
-## 🚀 Numen's Solution
+##  Numen's Solution
 Numen overcomes this limitation by using a **training-free, arbitrary-dimension** approach. Instead of learning a fixed-size embedding (e.g., 4096d) from a finite vocabulary, Numen uses **Character N-Gram Hashing** to map text into a dense vector space of *any* size.
 
 ### Key Advantages
@@ -13,7 +13,7 @@ Numen overcomes this limitation by using a **training-free, arbitrary-dimension*
 2. **No Vocabulary Limit**: Handles any word variations via n-grams.
 3. **Zero Training**: Purely algorithmic, no expensive pre-training required.
 
-## 📊 Results (Recall@100)
+##  Results (Recall@100)
 
 Numen significantly outperforms SOTA embedding models on the LIMIT benchmark.
 
@@ -32,7 +32,7 @@ Numen significantly outperforms SOTA embedding models on the LIMIT benchmark.
 
 **Note**: BM25 (sparse) is included as a baseline. Numen is the top-performing **dense** model, bridging the gap between traditional embeddings and sparse retrieval.
 
-## 🛠️ How to Run
+##  How to Run
 
 The benchmark is contained in a single, self-contained Python script designed for Google Colab or local execution.
 
@@ -53,7 +53,7 @@ The script uses a specialized **N-Gram Hashing** mode for Numen:
 - **Vectorization**: Maps hashes to indices in a fixed-size float vector (e.g., 8192d).
 - **Similarity**: Cosine similarity between query and document vectors.
 
-## 📂 Files
+##  Files
 - `one.ipynb`: Complete benchmark script (Numen core + LIMIT eval).
 - `log.txt`: Execution log with detailed results.
 - `numen_vs_limit.png`: Visualization of performance vs dimension.
@@ -63,4 +63,5 @@ The script uses a specialized **N-Gram Hashing** mode for Numen:
 ##
 
 **PS**: Sangeet's the name, a daft undergrad splashing through chemistry and code like a toddler—my titrations are a mess, and I've used my mouth to pipette. 
+
 
