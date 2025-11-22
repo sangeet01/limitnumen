@@ -54,6 +54,7 @@ The script uses a specialized **N-Gram Hashing** mode for Numen:
 - **Similarity**: Cosine similarity between query and document vectors.
 
 ## 📂 Files
-- `one.py`: Complete benchmark script (Numen core + LIMIT eval).
+- `one.ipynb`: Complete benchmark script (Numen core + LIMIT eval).
 - `log.txt`: Execution log with detailed results.
 - `numen_vs_limit.png`: Visualization of performance vs dimension.
+
