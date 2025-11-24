@@ -301,11 +301,11 @@ class NumenRetriever:
             # e.g. "apple" -> "^apple$"
             word_marked = f"^{word}$"
             
-            # Generate 3-grams and 4-grams
+            # Generate 3-grams, 4-grams, and 5-grams
             # "likes" -> "^li", "lik", "ike", "kes", "es$"
             # "like"  -> "^li", "lik", "ike", "ke$"
             # Overlap: "^li", "lik", "ike" -> High similarity!
-            for n in [3, 4]:
+            for n in [3, 4, 5]:
                 if len(word_marked) >= n:
                     ngrams.extend([word_marked[i:i+n] for i in range(len(word_marked)-n+1)])
         
@@ -321,9 +321,15 @@ class NumenRetriever:
             idx = hash_val % self.codon_size
             
             # Add frequency (TF) with LENGTH WEIGHTING (Heuristic IDF)
-            # 4-grams are more specific/rare than 3-grams, so we weight them higher.
-            # This mimics BM25's IDF term.
-            weight = 5.0 if len(gram) >= 4 else 1.0
+            # 5-grams > 4-grams > 3-grams
+            length = len(gram)
+            if length >= 5:
+                weight = 10.0
+            elif length == 4:
+                weight = 5.0
+            elif length == 3:
+                weight = 1.0
+            
             vector[idx] += weight
             
         # Apply Log-Saturation (TF Damping)
@@ -434,7 +440,7 @@ print(f"  Documents: {len(documents)}")
 print(f"  Qrels: {len(qrels)}")
 
 # Test multiple embedding dimensions
-dimensions = [512, 1024, 2048, 4096, 8192]
+dimensions = [512, 1024, 2048, 4096, 8192, 16384, 32768]
 
 results_table = []
 
