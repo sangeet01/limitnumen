@@ -1,6 +1,7 @@
 # Numen vs LIMIT Benchmark
 
-This directory contains the benchmark code and results demonstrating Numen's performance on the **LIMIT dataset** (DeepMind, 2025).
+This directory contains the benchmark code and results demonstrating Numen's performance on the **LIMIT dataset** (DeepMind, 2025). 
+[Dataset](https://huggingface.co/datasets/orionweller/LIMIT)
 
 ##  The Challenge
 The LIMIT paper [On the Theoretical Limitations of Embedding-Based Retrieval](https://arxiv.org/abs/2508.21038) argues that dense embedding models have a fundamental theoretical limit based on their dimension ($d$). They showed that even state-of-the-art 7B parameter models (E5-Mistral, GritLM) fail on simple retrieval tasks because they cannot represent all combinations of documents.
@@ -63,6 +64,7 @@ The script uses a specialized **N-Gram Hashing** mode for Numen:
 ##
 
 **PS**: Sangeet's the name, a daft undergrad splashing through chemistry and code like a toddler—my titrations are a mess, and I've used my mouth to pipette. 
+
 
 
 
