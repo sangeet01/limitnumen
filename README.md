@@ -64,6 +64,23 @@ The script uses a specialized **N-Gram Hashing** mode for Numen:
 Apache License 2.0 - see [LICENSE](LICENSE) file for details.
 
 
+##  Citation
+If you use Numen in your research, please cite it as follows:
+
+```bibtex
+@misc{sharma2025numen,
+  author = {Sharma, Sangeet},
+  title = {Numen: Training-Free Dense Retrieval via N-Gram Hashing},
+  year = {2025},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/sangeet01/limitnumen}}
+}
+```
+
+
+
 ##
 
 **PS**: Sangeet's the name, a daft undergrad splashing through chemistry and code like a toddler—my titrations are a mess, and I've used my mouth to pipette. 
+
