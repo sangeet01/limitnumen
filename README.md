@@ -34,7 +34,7 @@ Numen significantly outperforms SOTA embedding models on the LIMIT benchmark and
 
 ##  How to Run
 
-The benchmark is contained in a single, self-contained Python script designed for Google Colab or local execution.
+The benchmark is contained in a single, self-contained Jupyter notebook designed for Google Colab or local execution.
 
 ### Prerequisites
 ```bash
@@ -42,9 +42,9 @@ pip install datasets numpy matplotlib
 ```
 
 ### Running the Benchmark
-1. Open `numen.py`.
+1. Open `numen.ipynb`.
 2. Run the script (it handles dataset downloading via HuggingFace).
-3. Results will be printed to stdout and saved to `log.txt`.
+
 
 ### Implementation Details
 The script uses a specialized **N-Gram Hashing** mode for Numen:
@@ -55,8 +55,6 @@ The script uses a specialized **N-Gram Hashing** mode for Numen:
 
 ##  Files
 - [**`numen.ipynb`**](https://github.com/sangeet01/limitnumen/blob/main/limit/numen.ipynb): Complete benchmark notebook (Numen core + LIMIT eval).
-- [**`numen.py`**](https://github.com/sangeet01/limitnumen/blob/main/limit/numen.py): Standalone Python script.
-- [**`log.txt`**](https://github.com/sangeet01/limitnumen/blob/main/limit/log.txt): Execution log with detailed results.
 - [**`numen_.png`**](https://github.com/sangeet01/limitnumen/blob/main/limit/numen_.png): Visualization of performance vs dimension.
 
 ##  License
@@ -83,4 +81,5 @@ If you use Numen in your research, please cite it as follows:
 ##
 
 **PS**: Sangeet's the name, a daft undergrad splashing through chemistry and code like a toddler—my titrations are a mess, and I've used my mouth to pipette. 
+
 
