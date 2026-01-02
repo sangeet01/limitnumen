@@ -59,7 +59,7 @@ The script uses a specialized **N-Gram Hashing** mode for Numen:
 
 ##  License
 
-Apache License 2.0 - see [LICENSE](LICENSE) file for details.
+Apache License 2.0 with Commons Clause - see [LICENSE](LICENSE) file for details.
 
 
 ##  Citation
@@ -81,5 +81,6 @@ If you use Numen in your research, please cite it as follows:
 ##
 
 **PS**: Sangeet's the name, a daft undergrad splashing through chemistry and code like a toddler—my titrations are a mess, and I've used my mouth to pipette. 
+
 
 
