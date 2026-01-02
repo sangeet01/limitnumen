@@ -65,7 +65,7 @@ This project is released under the **Apache License 2.0** with the **Commons Cla
 - Non-commercial use, modification, and distribution are permitted (personal, academic, research, internal company use, etc.).
 - **Commercial use** (selling products/services, SaaS/hosting offerings, or any paid use where substantial value comes from this software) requires explicit prior written permission from the licensor.
 
-Full legal terms → see the [LICENSE](/LICENSE) file.
+Full legal terms, see the [LICENSE](/LICENSE) file.
 
 
 ##  Citation
@@ -87,6 +87,7 @@ If you use Numen in your research, please cite it as follows:
 ##
 
 **PS**: Sangeet's the name, a daft undergrad splashing through chemistry and code like a toddler—my titrations are a mess, and I've used my mouth to pipette. 
+
 
 
 
