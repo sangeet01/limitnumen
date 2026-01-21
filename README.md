@@ -62,7 +62,7 @@ The script uses a specialized **N-Gram Hashing** mode for Numen:
 
 This project is released under the **Apache License 2.0** with the **Commons Clause** restriction.
 
-- Non-commercial use, modification, and distribution are permitted (personal, academic, research, internal company use, etc.).
+- Non-commercial use, modification, and distribution are permitted (personal/academic).
 - **Commercial use** (selling products/services, SaaS/hosting offerings, or any paid use where substantial value comes from this software) requires explicit prior written permission from the licensor.
 
 Full legal terms, see the [LICENSE](/LICENSE) file.
@@ -87,6 +87,7 @@ If you use Numen in your research, please cite it as follows:
 ##
 
 **PS**: Sangeet's the name, a daft undergrad splashing through chemistry and code like a toddler—my titrations are a mess, and I've used my mouth to pipette. 
+
 
 
 
