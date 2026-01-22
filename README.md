@@ -72,13 +72,14 @@ Full legal terms, see the [LICENSE](/LICENSE) file.
 If you use Numen in your research, please cite it as follows:
 
 ```bibtex
-@misc{sharma2025numen,
-  author = {Sharma, Sangeet},
-  title = {Numen: Training-Free Dense Retrieval via N-Gram Hashing},
-  year = {2025},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/sangeet01/limitnumen}}
+@misc{sharma2026geometriccursehighdimensionalngram,
+      title={Beyond the Geometric Curse: High-Dimensional N-Gram Hashing for Dense Retrieval}, 
+      author={Sangeet Sharma},
+      year={2026},
+      eprint={2601.15205},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2601.15205}, 
 }
 ```
 
